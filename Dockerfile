@@ -1,8 +1,7 @@
-# Menggunakan base image nginx
 FROM nginx:alpine
 
-# Menyalin file html custom ke dalam container
-COPY index.html /usr/share/nginx/html/index.html
+# Tanda titik pertama (.) artinya: "Ambil SEMUA file di folder laptop ini"
+# Tanda path kedua artinya: "Taruh ke dalam folder html si container"
+COPY . /usr/share/nginx/html
 
-# Expose port 80
 EXPOSE 80
