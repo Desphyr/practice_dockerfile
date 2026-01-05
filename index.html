@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Practice - Desphyr</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 600px;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        p { font-size: 1.2em; margin-bottom: 30px; }
+        .status {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #48bb78;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .footer { margin-top: 30px; font-size: 0.8em; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Deployment Berhasil!</h1>
+        <p>Halaman ini berjalan di dalam Docker Container.</p>
+        
+        <div class="status">
+            Server IP: 10.1.6.206
+        </div>
+
+        <div class="footer">
+            Docker Image: achmadroyhan/practice_dockerfile<br>
+            GitHub Repo: Desphyr/practice_dockerfile
+        </div>
+    </div>
+</body>
+</html>
